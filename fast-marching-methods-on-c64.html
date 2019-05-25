@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Veikko Sariola's Random Stash</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <!-- twitter card metadata -->
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="Fast Marching Methods on C64">
+<meta name="twitter:description" content="">
+        <!-- OG Tags -->
+<meta property="og:url" content="/fast-marching-methods-on-c64.html"/>
+<meta property="og:title" content="Veikko Sariola's Random Stash | Fast Marching Methods on C64" />
+<meta property="og:description" content="" />
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["/theme/css/icons.data.svg.css", "/theme/css/icons.data.png.css", "/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <h1><a href="/">Veikko Sariola's Random Stash</a></h1>
+            <a href="#menu" id="menu-link">menu</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="/pages/about.html">about</a></li>
+                            <li class="active"><a href="/category/programming.html">programming</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2019-05-26 00:00:00+03:00">
+                <script>document.write(moment('2019-05-26 00:00:00+03:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            Fast Marching Methods on C64
+          </h2>
+        </header>
+      <div class="content">
+         <p>In 2007, while still a student, I learned of the <a href="https://en.wikipedia.org/wiki/Fast_marching_method">Fast Marching Method</a>, originally proposed by <a href="https://math.berkeley.edu/~sethian/">J.A. Sethian</a>. The algorithm operates on a grid, consisting of cells, each with different "slowness" (finite or infinite). The algorithm finds the shortest arrival time to each cell, similar to Djikstra's algorithm, but with a proper Euclidian norm. Applications of Fast Marching Methods include computing the shortest path for a robot navigating a maze or computing the shadows of point-like light sources. Which is to say, they are very useful in robotics or computer games.  </p>
+<p>In both Fast Marching Method and Djikstra's algorithm, all cells are first unvisited, and one or more of the cells are given tentative arrival times. Then, one cell at time, from the cells with tentative arrival times, the cell with smallest arrival time is marked as accepted and the tentative arrival times are considered for the unvisited neighbours. The difference in the algorithms is how the tentative arrival times are computed.</p>
+<p>Both algorithms have a running time of O(N log N), where N is the number of cells visited. log N comes from the fact that the cells with tentative arrival times are kept in a priority queue, from which it is log(N) operation to remove the cell with the smallest tentative arrival time.</p>
+<p>Back then I learned that <a href="https://doi.org/10.1016/j.jcp.2005.08.005">Yatziv, Bartesaghi and Sapiro</a> had proposed a version that runs in O(N). Here the idea was that the priority queue was replaced with an "untidy priority queue": the considered cells are kept in a finite number of bins, but within each bin, there's no internal ordering. Instead of removing the smallest element from the queue, we remove any element from the smallest bin. The bins can be implemented as simple linked lists so adding and removing are O(1) operations and thus the total running time of the algorithm is O(N). The slightly wrong ordering of the priority queue can create minor errors in the output, but Yatziv, Bartesaghi and Sapiro and following research proved that the error can be negligible.</p>
+<p>As a part of my studies, I was to take a special assignment in Computational Science and Engineering. I proposed to implement and test the algorithm of Yatziv, Bartesaghi and Sapiro and compare it to the original. <a href="pdfs/LTTErikoistyo_Sariola.pdf">Here's my student report</a>, from 2007. Unfortunately, the report is in Finnish, but non-speakers can enjoy the pictures of shadows from point-like light sources.</p>
+<p>Fast forward to today, I thought it would be fun to implement the algorithm on the C64, writing in the assembly language. The method uses a first order difference method. The O(N) trick was taken one step further so that when accepting a cell, all cells in a bin get the same, integer value. Furthermore, several smaller tricks were done to make the constant small:</p>
+<ul>
+<li>All math is 8-bit integers and solutions to the eikonal equation are found using table lookups. For example, when using a slowness of 15, from a starting cell the algorithm can search 240/15 = 16 cells away. Actually, it can search 249/15 = 16.6 cells away if one willing to accept a small bug every now and then :)</li>
+<li>Priorities are never updated in the priority queue, because in 2D, usually the priority gets updated only once if at all. Instead, a cell can be added several (usually two) times to the priority queue and when considering a cell, we just check if it has been already accepted and skip it in the case it has. This saves enormous amount of memory because we don't need backpointers for the cells to update their priorities in the queue. I found this to be in the order of 30% faster than actually updating the cell.</li>
+<li>When a cell is considered for the first time, a special temporary value is written to the output array. For example, if the cell considered was north, then a temporary value NORTH = 255 is written to the output array. Next time, when this cell is considered, if there is one of these temporary values, we know to which direction is the smallest cell and if the currently just-accepted cell is diagonal to that, we know which two cells should be used to solve the eikonal equation. Such cell is marked as NEAR = 250 and needs not be considered again. Such a cell is then finally given an arrival time &lt; 250 when it is finally accepted.</li>
+<li>The elements are not removed from the smallest bin one by one, but once we are finished with the smallest bin, the whole bin is freed at once. Bins are singly linked lists so "freeing" the bin is just tying the freed list to an another linked list of unused elements.</li>
+<li>Finally, code was carefully optimized by counting cycles in a debugger and doing the usual assembly optimizations (not setting processor flags if they can be proven to be always in known state etc.). The code was primarily optimized for speed, not size, but the algorithm is still only 512b.</li>
+</ul>
+<p>Here's a demo of line of sight / shadow calculations, running on VICE.</p>
+<p><img alt="Line of sight / shadow calculations on C64" src="images/C64-fast-marching-los.png"></p>
+<p>Sources and more explanations can be found from the <a href="https://github.com/vsariola/c64-fast-marching">repository</a>.</p>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+      <p>
+        <script src="https://utteranc.es/client.js"
+                repo="vsariola/vsariola.github.io"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </p>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://github.com/vsariola" target="_blank"><div class="icon-github icon"></div></a>
+                        <a href="https://scholar.google.fi/citations?user=GfkEQAMAAAAJ" target="_blank"><div class="icon-googlescholar icon"></div></a>
+                        <a href="https://www.researchgate.net/profile/Veikko_Sariola" target="_blank"><div class="icon-researchgate icon"></div></a>
+                        <a href="https://orcid.org/0000-0001-8307-6120" target="_blank"><div class="icon-orcid icon"></div></a>
+                        <a href="https://www.linkedin.com/in/veikkosariola" target="_blank"><div class="icon-linkedin icon"></div></a>
+                        <a href="https://tutcris.tut.fi/portal/en/persons/veikko-sariola(dbd45f9f-d9bc-46e0-bb5b-f5898b410965).html" target="_blank"><div class="icon-tuni icon"></div></a>
+						
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> vsariola</p>
+                </footer>
+        </div>
+</body>
+</html>
