@@ -10,7 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Helsinki'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,14 +20,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Tampere University', 'https://www.tuni.fi/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('GitHub', 'https://www.github.com/vsariola/)'),('Google Scholar', 'https://scholar.google.fi/citations?user=GfkEQAMAAAAJ'),)
 
 DEFAULT_PAGINATION = 10
 
