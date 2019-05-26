@@ -21,18 +21,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Tampere University', 'https://www.tuni.fi/'),)
-
-# Social widget
-SOCIAL = (('GitHub', 'https://www.github.com/vsariola/)'),('Google Scholar', 'https://scholar.google.fi/citations?user=GfkEQAMAAAAJ'),)
-
 DEFAULT_PAGINATION = 10
 
 FIRST_NAME = 'Veikko'
 LAST_NAME = 'Sariola'
 SUMMARY_MAX_LENGTH = 50
 GITHUB = 'https://github.com/vsariola'
-
+GOOGLESCHOLAR = 'https://scholar.google.fi/citations?user=GfkEQAMAAAAJ'
+RESEARCHGATE = 'https://www.researchgate.net/profile/Veikko_Sariola'
+LINKEDIN = 'https://www.linkedin.com/in/veikkosariola'
+ORCID = 'https://orcid.org/0000-0001-8307-6120'
+TUNI = 'https://tutcris.tut.fi/portal/en/persons/veikko-sariola(dbd45f9f-d9bc-46e0-bb5b-f5898b410965).html'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
