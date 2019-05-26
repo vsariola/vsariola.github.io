@@ -6,6 +6,8 @@ AUTHOR = 'vsariola'
 SITENAME = "Veikko Sariola's Random Stash"
 SITEURL = ''
 
+THEME = 'brutalist-theme/'
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Helsinki'
@@ -26,6 +28,11 @@ LINKS = (('Tampere University', 'https://www.tuni.fi/'),)
 SOCIAL = (('GitHub', 'https://www.github.com/vsariola/)'),('Google Scholar', 'https://scholar.google.fi/citations?user=GfkEQAMAAAAJ'),)
 
 DEFAULT_PAGINATION = 10
+
+FIRST_NAME = 'Veikko'
+LAST_NAME = 'Sariola'
+SUMMARY_MAX_LENGTH = 50
+GITHUB = 'https://github.com/vsariola'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
