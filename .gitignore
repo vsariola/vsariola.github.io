@@ -111,3 +111,4 @@ Pipfile.lock
 # project specific
 output/
 **/ignore/
+*.bat
