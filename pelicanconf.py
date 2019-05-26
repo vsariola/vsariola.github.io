@@ -34,3 +34,5 @@ ORCID = 'https://orcid.org/0000-0001-8307-6120'
 TUNI = 'https://tutcris.tut.fi/portal/en/persons/veikko-sariola(dbd45f9f-d9bc-46e0-bb5b-f5898b410965).html'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+STATIC_PATHS = ['images', 'pdfs']
