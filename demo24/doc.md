@@ -4,6 +4,7 @@
 * __audio_fft__ ```Number```
 * __BASSHITS__ ```Number```
 * __BD__ ```Number```
+* __BPM__ ```Number``` (default Value: `132.000132000132`)
 * __BREAKS__ ```Number```
 * __demo_length__ ```Number```
 * __midi_a3__ ```Number```
