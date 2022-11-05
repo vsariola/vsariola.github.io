@@ -10,7 +10,7 @@
 * __midi_a3__ ```Number```
 * __mute__ ```Number```
 * __ORCHHIT__ ```Number```
-* __overlay_show__ ```Number``` (default Value: `1`)
+* __overlay_show__ ```Number``` (default Value: `0`)
 * __SD__ ```Number```
 * __SHOUTS__ ```Number```
 * __VOX__ ```Number```
