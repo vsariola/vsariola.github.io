@@ -7,6 +7,7 @@ Additional code from contributors and libraries in this export are licenced as f
 MIT:
 
 - glmatrix by toji (https://github.com/toji/gl-matrix)
+- Worley Noise by Stefan Gustavson (https://thebookofshaders.com/edit.php#12/2d-cnoise-2x2x2.frag)
 
 Public Domain:
 

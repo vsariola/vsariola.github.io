@@ -8,3 +8,4 @@
 - ops by cables user andro (https://cables.gl/user/andro)
 - Domain Warping Shader by inigo quilez (http://iquilezles.org/www/articles/warp/warp.htm)
 - ops by cables user action (https://cables.gl/user/action)
+- Worley Noise by Stefan Gustavson (https://thebookofshaders.com/edit.php#12/2d-cnoise-2x2x2.frag)
